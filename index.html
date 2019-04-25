@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 
 	<!-- Titles -->
-	<title>Новый проект</title>
+	<title>Supplement</title>
     <meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -13,7 +13,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 	<!-- Styles -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/HelveticaNeueCyr/stylesheet.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -26,40 +28,48 @@
 </head>
 <body>
 	<!-- Навигация -->
-	<div class="container">
-		<div class="section">
-			<div class="logo"></div>
-			<div class="menu"></div>
+	<div class="navigation">
+		<div class="container">
+			<div class="section">
+				<div class="logo"><a href="#">Supplement</a></div>
+				<div class="menu"></div>
+			</div>
 		</div>
 	</div>
 	<!-- // Навигация -->
-	<!-- cover -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5">
-				<div class="obertka">
-					<div class="title">Do It Now</div>
-					<div class="subtitle">Or You Never Get It Back</div>
-				</div>
+	<!-- main -->
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="inner">
+						<div class="title">Do It Now</div>
+						<div class="subtitle">Or You Never Get It Back</div>
+					</div>
 
-				<div class="description">
-					<div class="description__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</div>
-					<div class="description__obertka">
-						<button class="description__button">ORDER NOW</button>
-						<div class="description__demonstration">Watch The Video</div>
+					<div class="description">
+						<div class="description__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</div>
+						<div class="description__inner">
+							<button class="description__button">Order now</button>
+							<div class="description__demonstration"><a href="#">Watch The Video</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="cover_img">
+						<img class="cover_img--img" src="img/block1.2.png" alt="">
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7">
-				<div class="cover_img"></div>
-			</div>
 		</div>
 	</div>
-	<!-- //cover -->
+	<!-- //main -->
 	<!-- group12 -->
 	<div class="group12">
 		<div class="container group12__container">
-			<div class="img__group12"></div>
+			<div class="img__group12">
+				<img class="img__group12--img" src="img/block2.png" alt="">
+			</div>
 			<div class="obertka__group12">
 				<div class="group10_1">
 					<div class="group10__number">100</div>
@@ -80,36 +90,38 @@
 	<!-- features -->
 	<div class="features">
 		<div class="container">
-			<div class="features__header">
-				<div class="features__header--title">
-					<span class="features__header--title_bold">Fetures</span> We Offer
+			<div class="section-header">
+				<div class="section-header__title">
+					<span class="section-header__title--special">Fetures</span>We Offer
 				</div>
-				<div class="features__header--subtitle">
-					Don’t forget to check these real success.
-				</div>
+				<div class="section-header__subtitle">Don’t forget to check these real success.</div>
 			</div>
 			<div class="features__content">
-				<div class="col-md-3 content1">
-					<div class="section__features">
-						<div class="title__features title__features--right">Increased Energy</div>
-						<div class="subtitle__features subtitle__features--right">Lorem ipsum dolor sit amet, consec<br> tetuer adipiscing elit, sed diam nonu </div>
+				<div class="row">
+					<div class="col-md-3 mr-80">
+						<div class="section__features">
+							<div class="title__features title__features--right">Increased Energy</div>
+							<div class="subtitle__features subtitle__features--right">Lorem ipsum dolor sit amet, consec<br> tetuer adipiscing elit, sed diam nonu </div>
+						</div>
+						<div class="section__features">
+							<div class="title__features title__features--right">Weight Loss</div>
+							<div class="subtitle__features subtitle__features--right">Lorem ipsum dolor sit amet, consec<br> tetuer adipiscing elit, sed diam nonu </div>
+						</div>
 					</div>
-					<div class="section__features">
-						<div class="title__features title__features--right">Weight Loss</div>
-						<div class="subtitle__features subtitle__features--right">Lorem ipsum dolor sit amet, consec<br> tetuer adipiscing elit, sed diam nonu </div>
+					<div class="col-md-3">
+						<div class="section__features--img">
+							<img src="img/block3.png" alt="">
+						</div>
 					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="section__features--img"></div>
-				</div>
-				<div class="col-md-3">
-					<div class="section__features">
-						<div class="title__features title__features--left">Bone Builder</div>
-						<div class="subtitle__features">Lorem ipsum dolor sit amet, consec<br> tetuer adipiscing elit, sed diam nonu </div>
-					</div>
-					<div class="section__features">
-						<div class="title__features title__features--left">Stress Release</div>
-						<div class="subtitle__features">Lorem ipsum dolor sit amet, consec<br> tetuer adipiscing elit, sed diam nonu </div>
+					<div class="col-md-3 ml-80">
+						<div class="section__features">
+							<div class="title__features title__features--left">Bone Builder</div>
+							<div class="subtitle__features subtitle__features--left">Lorem ipsum dolor sit amet, consec<br> tetuer adipiscing elit, sed diam nonu </div>
+						</div>
+						<div class="section__features">
+							<div class="title__features title__features--left">Stress Release</div>
+							<div class="subtitle__features subtitle__features--left">Lorem ipsum dolor sit amet, consec<br> tetuer adipiscing elit, sed diam nonu </div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -117,7 +129,7 @@
 	</div>
 	<!-- //features -->
 	<!-- realman -->
-	<div class="realman">
+	<!-- <div class="realman">
 		<div class="container">
 			<div class="realman__header">
 				<div class="realman__header--title">
@@ -131,10 +143,10 @@
 				realman__carousel
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- realman -->
 	<!-- testimonials -->
-	<div class="testimonials">
+	<!-- <div class="testimonials">
 		<div class="container">
 			<div class="testimonials__header">
 				<div class="testimonials__header--title">
@@ -156,10 +168,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- //testimonials -->
 	<!-- supplement facts -->
-	<div class="container supplementfacts">
+	<!-- <div class="container supplementfacts">
 		<div class="supplementfacts__header">
 				<div class="supplementfacts__header--title">     
 					<span class="supplementfacts__header--title_bold">Supplement</span> Facts
@@ -171,10 +183,10 @@
 			<div class="supplementfacts__carousel">
 				supplementfacts-content
 			</div>
-	</div>
+	</div> -->
 	<!-- //supplement facts -->
 	<!-- certifications -->
-	<div class="certifications">
+<!-- 	<div class="certifications">
 		<div class="container">
 			<div class="certifications__header">
 				<div class="certifications__header--title">     
@@ -192,10 +204,10 @@
 					<img src="img/block7.5.png" alt="">
 				</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- //certifications -->
 	<!-- buy now -->
-	<div class="container buynow">
+<!-- 	<div class="container buynow">
 		<div class="col-md-6">
 			<div class="buynow__img"></div>
 		</div>
@@ -209,10 +221,10 @@
 				<input class="calltoaction__button" type="submit" value="Order Now">
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- //buy now -->
 	<!-- subscribe -->
-	<div class="subscribe">
+<!-- 	<div class="subscribe">
 		<div class="container">
 			<div class="subscribe__header">
 				<div class="subscribe__header--title">
@@ -227,10 +239,10 @@
 				<input type="submit" class="subscribe__button" value="subscribe">
 			</form>
 		</div>
-	</div>
+	</div> -->
 	<!-- //subscribe -->
 	<!-- contact -->
-	<div class="container">
+<!-- 	<div class="container">
 		<div class="contact__header">
 			<div class="contact__header--title">     
 				<span class="contact__header--title_bold">Inquire</span>Your Issue
@@ -247,10 +259,10 @@
 			<textarea class="contact__text" name="" id="" cols="30" rows="10" placeholder="Subject"></textarea>
 			<input type="submit" class="contact__button" value="send">
 		</form>
-	</div>
+	</div> -->
 	<!-- //contact -->
 	<!-- footer -->
-	<div class="footer">
+<!-- 	<div class="footer">
 		<div class="container">
 			<div class="col-md-4">
 				<div class="footer__copyright">
@@ -276,7 +288,7 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- //footer -->
 
 	<!-- Scripts -->

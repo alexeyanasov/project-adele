@@ -2,41 +2,88 @@
 	position: relative;
 }
 .group12 {
-	height: 352px;
+	height: 252px;
 	background-image: -moz-linear-gradient( 130deg, rgb(15,8,22) 0%, rgb(24,16,33) 64%, rgb(33,23,43) 90%);
 	background-image: -webkit-linear-gradient( 130deg, rgb(15,8,22) 0%, rgb(24,16,33) 64%, rgb(33,23,43) 90%);
 	background-image: -ms-linear-gradient( 130deg, rgb(15,8,22) 0%, rgb(24,16,33) 64%, rgb(33,23,43) 90%);
 	// margin-bottom: 120px;
+	@media (min-width: 992px) {
+	}
+	@media (min-width: 1170px){
+		height: 352px;
+	}
 }
 .obertka__group12{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 308px;
-	margin-top: 120px;
+	padding-left: 0px;
+	padding-top: 50px;
+	@media (min-width: 992px) {
+		padding-left: 308px;
+	}
+	@media (min-width: 1170px){
+		padding-top: 120px;
+	}
 }
 .img__group12{
 	// background: red;
-	background-image: url(../img/block2.png);
-	height: 525px;
-	width: 404px;
-	position: absolute;
-	left: -120px;
-	top: -120px;
+	position: relative;
+}
+.img__group12--img{
+	display: none;
+	@media (min-width: 992px) {
+		display: block;
+		height: 400px;
+		position: absolute;
+		left: -95px;
+		top: -100px;
+	}
+	@media (min-width: 1170px){
+		height: 525px;
+		left: -120px;
+		top: -120px;
+	}
 }
 .group10__number{
+	margin-left: 25px;
 	color: #fff;
-	font-size: 72px;
-	font-weight: 700;
-	padding-left: 24px;
-	border-left: 5px rgb(24, 163, 221) solid; 
-	border-radius: 2px;
-	margin-bottom: 20px;
+	font-size: 45px;
+	font-weight: 900;
+	// padding-left: 24px;
+	// border-left: 5px rgb(24, 163, 221) solid; 
+	// border-radius: 2px;
+	// margin-bottom: 20px;
+	position: relative;
+	@media (min-width: 992px) {
+		font-size: 65px;
+	}
+	@media (min-width: 1170px){
+		font-size: 72px;
+	}
+}
+.group10__number:before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 5px;
+	left: -25px;
+	top: 25px;
+	bottom: 20px;
+	background-color: #18a3dd;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
 }
 .group10__text{
-	font-size: 16px;
+	font-size: 14px;
+	font-weight: 300;
 	color: #a9a9a9;
+	@media (min-width: 992px) {
+		font-size: 16px;
+	}
+	@media (min-width: 1170px){
+	}
 }
 .blue{
 	text-transform: uppercase;
