@@ -4,9 +4,14 @@
 	text-align: center;
 	@media (min-width: 992px) {
 		padding-top: 118px;
-		padding-bottom: 80px;
+		
 	}
 	@media (min-width: 1170px){
+	}
+}
+.pb-80{
+	@media (min-width: 992px) {
+		padding-bottom: 80px;
 	}
 }
 .section-header__title{
@@ -17,6 +22,15 @@
 	padding-bottom: 30px;
 	color: #333740;
 }
+.section-header__title--white{
+	font-family: Ralyway;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+	color: #e5e5e5;
+}
+
 .section-header__title--special{
 	font-size: 30px;
 	font-family: Ralyway;
@@ -24,16 +38,39 @@
 	padding-right: 30px;
 	position: relative;
 }
+.pr-0{
+	padding-right: 0px;
+}
 .section-header__title--special:after{
 	content: "";
 	display: block;
 	position: absolute;
 	// height: 45px;
 	width: 1px;
-	left: 154px;
 	top: -5px;
 	bottom: -5px;
 	background-color: #18a3dd;
+}
+.section-header__title--special--1:after{
+	left: 154px;
+}
+.section-header__title--special--2:after{
+	left: 176px;
+}
+.section-header__title--special--3:after{
+	left: 132px;
+}
+.section-header__title--special--4:after{
+	left: 220px;
+}
+.section-header__title--special--5:after{
+	display: none;
+}
+.section-header__title--special--6:after{
+	left: 186px;
+}
+.section-header__title--special--7:after{
+	left: 148px;
 }
 .section-header__subtitle{
 	font-size: 16px;
