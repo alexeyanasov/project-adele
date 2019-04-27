@@ -1,4 +1,64 @@
 .realman{
-	background-color: #fff;
-	height: 806px; //временная заглушка
+	display: none;
+	@media (min-width: 780px) {
+		display: block;
+		background-color: #fff;
+		// padding-bottom: 190px;
+		// height: 806px; //временная заглушка
+	}
+}
+.realma__carousel{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	// padding-bottom: 50px;
+}
+.inner-result{
+	display: flex;
+}
+.result{
+	padding-left: 30px;
+	.weight{
+		font-size: 30px;
+		font-weight: 700;
+		padding-right: 4px;
+		@media (min-width: 992px) {
+			font-size: 40px;
+			padding-right: 30px;
+		}
+	}
+	.result__weight{
+		font-weight: 300;
+		color: #18a3dd;
+	}
+	span{
+		font-size: 16px;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+}
+.participant{
+	text-transform: uppercase;
+	margin-top: 85px;
+	padding-left: 25px;
+	position: relative;
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 16px;
+	span{
+		font-weight: 400;
+	}
+}
+.participant:before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 6px;
+	left: 0;
+	top: -5px;
+	bottom: -5px;
+	background-color: #18a3dd;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
 }
