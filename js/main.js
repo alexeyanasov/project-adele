@@ -56,7 +56,7 @@ $(document).ready(function() {
 		
 		
 		//Autoplay
-		autoPlay : false,
+		autoPlay : true,
 		stopOnHover : false,
 		
 		// Navigation
@@ -77,6 +77,20 @@ $(document).ready(function() {
 		
 
 	});
+	/* TABS - кастомные табы на jQuery*/
+	// Скрываем все контейнеры кроме первого
+	$('#tabs-sections .section_block:not(:first)').hide();
+
+	// Обработчик на навигацию
+	$('#tabs-nav li').click(function(event) {
+		event.preventDefault();
+		$('#tabs-sections .section_block').hide();
+		$('#tabs-nav .current').removeClass("current");
+		$(this).addClass('current');
+
+		var clicked = $(this).find('a:first').attr('href');
+		$('#tabs-sections ' + clicked).fadeIn('fast');
+	}).eq(0).addClass('current');
 });
 
 

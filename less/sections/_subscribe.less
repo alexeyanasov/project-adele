@@ -1,24 +1,11 @@
 .subscribe{
-	background-image: url(../img/bg_subscribe.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	@media (min-width: 720px) {
-
-	}
+	background-image: url(../img/bg_subscribe.png); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	background-size: cover;
 	@media (min-width: 992px) {
-		background-image: url(../img/bg_subscribe.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		-webkit-background-size: contain;
-		     -o-background-size: contain;
-		        background-size: contain;
-		// height: 402px; //временная заглушка
 		padding-bottom: 60px;
-		
 	}
-	@media (min-width: 1170px){
-	}
-
 }
 .subscribe__header{
 	// margin-top: 100px;
@@ -65,16 +52,19 @@
 }
 .subscribe__button{
 	text-transform: uppercase;
+	outline: none;
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
 	padding: 10px;
 	background-color: rgb(24, 163, 221);
 	color: #fff;
 	border: 0;
+	transition: 1.5s;
 	&:hover{
 		background-color: #FFF;
 		color: rgb(24, 163, 221);
 		border: 1px solid;
+		padding: 14px;
 	}
 	@media (min-width: 720px) {
 		border-top-right-radius: 50px;

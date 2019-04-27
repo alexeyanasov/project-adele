@@ -312,6 +312,7 @@ body {
   text-transform: uppercase;
   margin-right: 30px;
   border: 0;
+  transition: 1.5s;
 }
 .description__button:hover {
   background-color: #FFF;
@@ -329,6 +330,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+  transition: 1.5s;
 }
 .description__demonstration a:hover {
   color: orange;
@@ -746,6 +748,11 @@ ul {
 .li-parent {
   position: relative;
 }
+.li-parent a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333740;
+}
 .li-content {
   padding: 10px;
 }
@@ -775,6 +782,7 @@ ul {
   border-radius: 25px;
   color: #fff;
   outline: none;
+  transition: 1.5s;
 }
 .supplement__button span {
   font-weight: 300;
@@ -938,6 +946,7 @@ ul {
   color: #fff;
   text-transform: uppercase;
   outline: none;
+  transition: 1.5s;
 }
 .calltoaction__button:hover {
   background-color: #FFF;
@@ -948,15 +957,10 @@ ul {
   background-image: url(../img/bg_subscribe.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 @media (min-width: 992px) {
   .subscribe {
-    background-image: url(../img/bg_subscribe.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
     padding-bottom: 60px;
   }
 }
@@ -1006,17 +1010,20 @@ ul {
 }
 .subscribe__button {
   text-transform: uppercase;
+  outline: none;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   padding: 10px;
   background-color: #18a3dd;
   color: #fff;
   border: 0;
+  transition: 1.5s;
 }
 .subscribe__button:hover {
   background-color: #FFF;
   color: #18a3dd;
   border: 1px solid;
+  padding: 14px;
 }
 @media (min-width: 720px) {
   .subscribe__button {
@@ -1074,6 +1081,7 @@ ul {
   margin-top: 52px;
   margin-bottom: 120px;
   outline: none;
+  transition: 1.5s;
 }
 .contact__button:hover {
   background-color: #FFF;
@@ -1123,6 +1131,7 @@ ul {
 .footer__nav--li a {
   color: #666666;
   text-decoration: none;
+  transition: 1.5s;
 }
 .footer__nav--li a:hover {
   color: orange;
