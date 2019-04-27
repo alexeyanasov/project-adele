@@ -91,6 +91,46 @@ $(document).ready(function() {
 		var clicked = $(this).find('a:first').attr('href');
 		$('#tabs-sections ' + clicked).fadeIn('fast');
 	}).eq(0).addClass('current');
+
+	// jQuery Validate JS
+	$("#contact-form").validate({
+		rules: {
+			name: { required: true },
+			subject: { required: true },
+			email: { required: true, email: true },
+			message: { required: true }
+		},
+
+		messages: {
+			name: "Пожалуйста, введите свое имя",
+			subject: "Пожалуйста, введите тему",
+			email: {
+				required: "Пожалуйста, введите свой email",
+				email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
+			},
+			message: "Пожалуйста, введите текст сообщения"
+		},
+		submitHandler: function(form) {
+		  ajaxFormSubmit();
+		}
+
+	});
+	$("#emailing").validate({
+		rules: {
+			email: { required: true, email: true }
+		},
+
+		messages: {
+			email: {
+				required: "Пожалуйста, введите свой email",
+				email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
+			}
+		},
+		submitHandler: function(form) {
+		  ajaxFormSubmit();
+		}
+
+	});
 });
 
 

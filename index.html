@@ -37,13 +37,13 @@
 		<div class="container">
 			<div class="section">
 				<div class="logo"><a href="#">Supplement</a></div>
-				<div class="menu"></div> 
+				<div class="menu"></div>
 			</div>
 		</div>
 	</div>
 	<!-- // Навигация -->
 	<!-- main -->
-	<div class="main">
+	<div id="main" class="main">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
@@ -70,7 +70,7 @@
 	</div>
 	<!-- //main -->
 	<!-- group12 -->
-	<div class="group12">
+	<div id="group12" class="group12">
 		<div class="container group12__container">
 			<div class="img__group12">
 				<img class="img__group12--img" src="img/block2.png" alt="">
@@ -93,7 +93,7 @@
 	</div>
 	<!-- //group12 -->
 	<!-- features -->
-	<div class="features">
+	<div id="features" class="features">
 		<div class="container">
 			<div class="section-header pb-80">
 				<div class="section-header__title">
@@ -134,7 +134,7 @@
 	</div>
 	<!-- //features -->
 	<!-- realman -->
-	<div class="realman">
+	<div id="realman" class="realman">
 		<div class="container">
 			<div class="section-header">
 				<div class="section-header__title">
@@ -203,7 +203,7 @@
 	</div>
 	<!-- realman -->
 	<!-- testimonials -->
-	<div class="testimonials">
+	<div id="testimonials" class="testimonials">
 		<div class="container">
 			<div class="section-header">
 				<div class="section-header__title--white">
@@ -253,7 +253,7 @@
 	</div>
 	<!-- //testimonials -->
 	<!-- supplement facts -->
-	<div class="supplementfacts">
+	<div id="supplementfacts" class="supplementfacts">
 		<div class="container">
 			<div class="section-header">
 				<div class="section-header__title">
@@ -407,7 +407,7 @@
 	</div>
 	<!-- //supplement facts -->
 	<!-- certifications -->
-	<div class="certifications">
+	<div id="certifications" class="certifications">
 		<div class="container">
 			<div class="section-header">
 				<div class="section-header__title">
@@ -426,7 +426,7 @@
 	</div>
 	<!-- //certifications -->
 	<!-- buy now -->
-	<div class="buynow">
+	<div id="buynow" class="buynow">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -449,7 +449,7 @@
 	</div>
 	<!-- //buy now -->
 	<!-- subscribe -->
-	<div class="subscribe">
+	<div id="subscribe" class="subscribe">
 		<div class="container">
 			<div class="section-header">
 				<div class="section-header__title--white">
@@ -457,15 +457,15 @@
 				</div>
 				<div class="section-header__subtitle">We regularly knock our customers with useful tips and offers.</div>
 			</div>
-			<form class="subscribe__inner" action="">
-				<input type="text" class="subscribe__email" placeholder="Enter Your Email">
+			<form id="emailing" class="subscribe__inner">
+				<input type="text" name="email" class="subscribe__email" placeholder="Enter Your Email">
 				<input type="submit" class="subscribe__button" value="subscribe">
 			</form>
 		</div>
 	</div>
 	<!-- //subscribe -->
 	<!-- contact -->
-	<div class="contact-bg">
+	<div id="contact" class="contact-bg">
 		<div class="container">
 			<div class="section-header">
 				<div class="section-header__title">
@@ -473,24 +473,24 @@
 				</div>
 				<div class="section-header__subtitle">We’re always happy to reply our customers.</div>
 			</div>
-			<form action="">
+			<form id="contact-form">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-md-push-3">
-							<input type="text" class="contact contact__name" placeholder="Name">
+							<input type="text" name="name" class="contact contact__name" placeholder="Name">
 						</div>
 						<div class="col-sm-12 col-md-6">
-							<input type="text" class="contact contact__email" placeholder="Email">
+							<input type="text" name="email" class="contact contact__email" placeholder="Email">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-6 col-md-push-3">
-							<input type="text" class="contact contact__theme" placeholder="Subject">
+							<input type="text" name="subject" class="contact contact__theme" placeholder="Subject">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-6 col-md-push-3">
-							<textarea class="contact__text" ></textarea>
+							<textarea class="contact__text" name="message"></textarea>
 						</div>
 					</div>
 				</div>
@@ -534,9 +534,10 @@
 	<!-- Scripts -->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/jquery.validate/jquery.validate.js"></script>
 	<!-- Owl Carousel -->
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-
+	<!-- Main.js -->
 	<script src="js/main.js"></script>
 	
 </body>

@@ -971,11 +971,18 @@ ul {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 6px;
-  padding-bottom: 16px;
+  padding-bottom: 35px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.subscribe__inner label.error {
+  color: red;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 @media (min-width: 720px) {
   .subscribe__inner {
@@ -988,6 +995,12 @@ ul {
     padding-top: 36px;
     padding-bottom: 36px;
     width: 617px;
+  }
+  .subscribe__inner label.error {
+    color: red;
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
   }
 }
 .mb-80 {
@@ -1023,13 +1036,19 @@ ul {
   background-color: #FFF;
   color: #18a3dd;
   border: 1px solid;
-  padding: 14px;
+  padding: 9px;
 }
 @media (min-width: 720px) {
   .subscribe__button {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     padding: 15px;
+  }
+  .subscribe__button:hover {
+    background-color: #FFF;
+    color: #18a3dd;
+    border: 1px solid;
+    padding: 14px;
   }
 }
 .contact-bg {
@@ -1039,7 +1058,7 @@ ul {
   border: 0;
   border-bottom: 1px #ebebeb solid;
   outline: none;
-  margin-bottom: 75px;
+  margin-top: 75px;
 }
 .contact__name {
   width: 260px;
@@ -1060,6 +1079,7 @@ ul {
   border: 0;
   border-bottom: 1px #ebebeb solid;
   outline: none;
+  margin-top: 75px;
 }
 @media (min-width: 992px) {
   .contact__text {
@@ -1087,6 +1107,10 @@ ul {
   background-color: #FFF;
   color: #18a3dd;
   border: 1px solid;
+}
+label.error {
+  display: block;
+  color: red;
 }
 .footer {
   background-color: #f1f4f5;
