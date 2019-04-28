@@ -212,15 +212,13 @@ body {
 @media (min-width: 992px) {
   .navigation {
     background-color: #fafcfc;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding: 23px;
   }
 }
 @media (min-width: 992px) {
   .navigation {
     background-color: #fafcfc;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding: 23px;
   }
 }
 .navigation a {
@@ -264,9 +262,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.fa {
-  padding-right: 20px;
 }
 .navigation__toggle-button {
   display: block;
