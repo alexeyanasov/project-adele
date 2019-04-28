@@ -226,8 +226,8 @@ body {
 .navigation a {
   color: #656973;
   text-decoration: none;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
   padding-left: 15px;
   padding-right: 15px;
@@ -249,7 +249,7 @@ body {
   padding: 0;
   list-style-type: none;
   justify-content: space-between;
-  background-color: #f1f4f5;
+  background-color: #fafcfc;
 }
 .navigation li {
   margin: 0;
@@ -281,7 +281,7 @@ body {
 }
 .navigation__toggle-button:focus,
 .navigation__toggle-button:active {
-  background-color: #f1f4f5;
+  background-color: #fafcfc;
 }
 .container--mobile--no-padding {
   padding-left: 0;
