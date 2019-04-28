@@ -7,6 +7,16 @@ $(document).ready(function() {
 
 	// Описываем событие при нажатии на кнопку
 	$(pull).on("click", function(e){
+		// Смена иконки бургера на крестик
+		if( $('.navigation-toggle .fa').hasClass('fa-bars')){
+			$('.navigation-toggle .fa').removeClass('fa-bars');
+			$('.navigation-toggle .fa').addClass('fa-times');
+		}else{
+			$('.navigation-toggle .fa').removeClass('fa-times');
+			$('.navigation-toggle .fa').addClass('fa-bars');
+		}
+		// !Смена иконки бургера на крестик
+
 
 	    // Отменяем стандартное поведение ссылки в браузере
 	    e.preventDefault();

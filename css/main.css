@@ -259,6 +259,15 @@ body {
 .navigation li.active {
   color: orange;
 }
+.navigation-toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa {
+  padding-right: 20px;
+}
 .navigation__toggle-button {
   display: block;
   position: relative;
@@ -267,17 +276,6 @@ body {
   padding-bottom: 23px;
   padding-left: 15px;
   padding-right: 15px;
-}
-.navigation__toggle-button:before {
-  content: "";
-  position: absolute;
-  top: 39px;
-  right: 15px;
-  width: 34px;
-  height: 29px;
-  background: url('../img/navigation/burger.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 .navigation__toggle-button:focus,
 .navigation__toggle-button:active {
