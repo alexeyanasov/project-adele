@@ -1,6 +1,42 @@
 $(document).ready(function() {
+	// НАВИГАЦИЯ!
+	// Скрипт для показа и скрытия выпадающего меню на смартфонах
+	// Создаем переменые для кнопки и для меню
+	var pull = $('#navigation-toggle');
+	var menu = $('.navigation ul');
 
+	// Описываем событие при нажатии на кнопку
+	$(pull).on("click", function(e){
+
+	    // Отменяем стандартное поведение ссылки в браузере
+	    e.preventDefault();
+
+	    // Открываем/Скрываем меню
+	    menu.slideToggle();
+
+	    // Добавляем модификатор --active
+	    $(this).toggleClass('navigation__toggle-button--active');
+	    
+	});
+
+	// При изменении размера окна, в большую сторону, если меню было с крыто, показываем его.
+	$(window).resize(function(){
+	    var w = $(window).width();
+	    if(w > 1900) {
+	        menu.removeAttr('style');
+	    }
+	});
+
+	//скрытие меню по клику
+	var w = $(window).width(); //ширина
+	if(w < 1900){
+		$('nav.navigation a').on("click", function(){
+			menu.slideToggle();
+		});
+	}
 	/* Call plugins hrere ...*/
+
+	// OwlCarousel
 	$("#slider_realman").owlCarousel({
 
 		// Most important owl features
@@ -18,12 +54,12 @@ $(document).ready(function() {
 		
 		
 		//Autoplay
-		autoPlay : false,
+		autoPlay : true,
 		stopOnHover : false,
 		
 		// Navigation
 		navigation : true,
-		navigationText : ["<img src=\"img/prev.png\">","<img src=\"img/next.png\">"],
+		navigationText : ["<img src=\"img/icon/prev.png\">","<img src=\"img/icon/next.png\">"],
 		rewindNav : true,
 		scrollPerPage : false,
 		
@@ -102,13 +138,13 @@ $(document).ready(function() {
 		},
 
 		messages: {
-			name: "Пожалуйста, введите свое имя",
-			subject: "Пожалуйста, введите тему",
+			name: "Please enter your name",
+			subject: "Please enter a subject",
 			email: {
-				required: "Пожалуйста, введите свой email",
-				email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
+				required: "Please enter your email address",
+				email: "The email address must be in the name@domain.com format. Perhaps you entered the email with an error."
 			},
-			message: "Пожалуйста, введите текст сообщения"
+			message: "Please enter your message"
 		},
 		submitHandler: function(form) {
 		  ajaxFormSubmit();
@@ -122,14 +158,18 @@ $(document).ready(function() {
 
 		messages: {
 			email: {
-				required: "Пожалуйста, введите свой email",
-				email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
+				required: "Please enter your email address",
+				email: "The email address must be in the name@domain.com format. Perhaps you entered the email with an error."
 			}
 		},
 		submitHandler: function(form) {
 		  ajaxFormSubmit();
 		}
 
+	});
+	//slide2id - плавная прокрутка по ссылкам
+	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+	    highlightSelector:"nav a"
 	});
 });
 
