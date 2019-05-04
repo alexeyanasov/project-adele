@@ -285,7 +285,7 @@ body {
   }
 }
 .header {
-  height: 100vh;
+  height: 100%;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
@@ -424,14 +424,14 @@ body {
   width: 18px;
   content: "";
   position: absolute;
-  display: inline-block;
+  display: none;
   background-image: url(../img/icon/icon.png);
   background-repeat: no-repeat;
-  left: 90px;
   top: 2px;
 }
 @media (min-width: 992px) {
   .header__video .header__video--link:after {
+    display: inline-block;
     left: 136px;
   }
 }
