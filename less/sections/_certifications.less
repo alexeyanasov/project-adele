@@ -1,16 +1,28 @@
 .certifications{
 	background-color: #f1f4f5;
+	padding-top: 30px;
 	padding-bottom: 25px;
 	@media (min-width: 992px) {
 		padding-bottom: 90px;
+		padding-top: 118px;
 	}
 }
 .certifications__content{
-	img{
+
+	.certifications__content--img{
 		display: block;
 		padding: 20px;
 		margin-left: auto;
 		margin-right: auto;
+		position: relative;
+		padding-right: 55px;
+		border-right: 1px solid transparent;
+		@media (min-width: 992px) {
+			border-right: 1px solid #e0e0e0;
+		}
+	}
+	.certifications__content--img:nth-last-child(1){
+		border-right: 0px;
 	}
 	@media (min-width: 992px) {
 		display: flex;
@@ -18,4 +30,7 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+}
+.mb-50{
+	margin-bottom: 50px;
 }

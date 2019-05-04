@@ -1,50 +1,43 @@
-.group12__container{
+.relative{
 	position: relative;
 }
-.group12 {
-	height: 252px;
+.numbers {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@media (min-width: 1170px){
+		padding-top: 102px;
+		padding-bottom: 102px;
+	}
 	background-image: -moz-linear-gradient( 130deg, rgb(15,8,22) 0%, rgb(24,16,33) 64%, rgb(33,23,43) 90%);
 	background-image: -webkit-linear-gradient( 130deg, rgb(15,8,22) 0%, rgb(24,16,33) 64%, rgb(33,23,43) 90%);
 	background-image: -ms-linear-gradient( 130deg, rgb(15,8,22) 0%, rgb(24,16,33) 64%, rgb(33,23,43) 90%);
-	@media (min-width: 1170px){
-		height: 352px;
-	}
 }
-.obertka__group12{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding-left: 0px;
-	padding-top: 50px;
-	@media (min-width: 992px) {
-		padding-left: 308px;
-	}
-	@media (min-width: 1170px){
-		padding-top: 120px;
-	}
+.numbers-item{
+	margin-left: 50px;
 }
-.img__group12{
+
+.numbers__img--wrapper{
 	position: relative;
 }
-.img__group12--img{
+
+.numbers__img{
 	display: none;
 	@media (min-width: 992px) {
 		display: block;
 		height: 400px;
 		position: absolute;
-		left: -95px;
-		top: -100px;
+		left: -50px;
+		bottom: -105px;
 	}
 	@media (min-width: 1170px){
 		height: 525px;
 		left: -120px;
-		top: -120px;
+		bottom: -150px;
 	}
 }
-.group10__number{
+.numbers-item__header{
 	margin-left: 25px;
-	color: #fff;
+	color: @white;
 	font-size: 45px;
 	font-weight: 900;
 	position: relative;
@@ -55,7 +48,7 @@
 		font-size: 72px;
 	}
 }
-.group10__number:before{
+.numbers-item__header:before{
 	content: "";
 	display: block;
 	position: absolute;
@@ -63,20 +56,20 @@
 	left: -25px;
 	top: 25px;
 	bottom: 20px;
-	background-color: #18a3dd;
+	background-color: @blue;
 	-webkit-border-radius: 5px;
 	        border-radius: 5px;
 }
-.group10__text{
+.numbers-item__desc{
 	font-size: 14px;
 	font-weight: 300;
-	color: #a9a9a9;
+	color: @gray;
 	@media (min-width: 992px) {
 		font-size: 16px;
 	}
 }
-.blue{
+.numbers-item__def{
 	text-transform: uppercase;
 	font-weight: 700;
-	color: #18a3dd;
+	color: @blue;
 }

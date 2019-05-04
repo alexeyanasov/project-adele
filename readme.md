@@ -1,4 +1,4 @@
-# Учебный проект Supplements PSD
+# Проект Supplements PSD
 
 ### Макет сделан мной. Дизайн (PSD) и верстка (HTML, CSS, LESS, jQuery). 
 

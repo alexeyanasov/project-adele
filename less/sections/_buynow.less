@@ -1,16 +1,31 @@
 .buynow{
 	padding-top: 50px;
 	position: relative;
-	@media (min-width: 992px) {
+	@media (min-width: 992px){
+		background-image: url(../img/block8/bg-byhow.png);
+		background-repeat: no-repeat;
 		padding-top: 200px;
+	}
+	@media (min-width: 1170px){
+		background-position: bottom 165px left -300px;
+		-webkit-background-size: auto;
+	     -o-background-size: auto;
+	        background-size: auto;
+	}
+	@media (min-width: 1300px){
+		background-position: bottom 150px left -150px;
+		-webkit-background-size: auto;
+	     -o-background-size: auto;
+	        background-size: auto;
 	}
 }
 .buynow__img{
 	position: static;
 	@media (min-width: 992px) {
 		position: absolute;
-		left: -215px;
+		left: -215px; 
 		top: -45px;
+		// top: -45px;
 	}
 }
 .calltoaction{
@@ -22,10 +37,10 @@
 .calltoaction__section{}
 .calltoaction__title{
 	padding-left: 30px;
-	font-family: Raleway;
+	font-family: @R;
 	font-size: 30px;
 	font-weight: 700;
-	color: #333740;
+	color: @darkgray;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	position: relative;
@@ -38,7 +53,7 @@
 	width: 5px;
 	top: 8px;
 	bottom: -8px;
-	background-color: #18a3dd;
+	background-color: @blue;
 	-webkit-border-radius: 5px;
 	        border-radius: 5px;
 }
@@ -46,7 +61,7 @@
 	font-weight: 300; //Lato
 	padding-left: 32px;
 	margin-bottom: 35px;
-	color: #333740;
+	color: @darkgray;
 	font-size: 20px;
 }
 .calltoaction__text{
@@ -54,22 +69,4 @@
 	font-size: 16px;
 	color: #666666;
 	margin-bottom: 40px;
-}
-
-.calltoaction__button{
-	border: 0;
-	background-color: rgb(24, 163, 221);
-	width: 180px;
-	height: 50px;
-	-webkit-border-radius: 25px;
-	      border-radius: 25px;
-	color: #fff;
-	text-transform: uppercase;
-	outline: none;
-	transition: 1.5s;
-	&:hover{
-		background-color: #FFF;
-		color: rgb(24, 163, 221);
-		border: 1px solid;
-	}
 }

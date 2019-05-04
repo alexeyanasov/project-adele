@@ -1,16 +1,30 @@
+@orange: #fff7b8; // желтый
+
+@whiteHead: #e5e5e5; //белый для заголовка
+@graySubtitle: #83888f; // серый для субтайтла
+
+@white: #fafcfc; // белый
+@blue: #18a3dd; // голубой
+@gray: #a9a9a9; // серый
+@darkgray: #333740; // темно серый
+
+@L: Lato;
+@R: Raleway;
+@H: HelveticaNeueCyr;
+
 html, body {
 	height: 100%;
 	min-width: 320px;
-	background-color: #fafcfc;
+	background-color: @white;
 }
 
 body {
 	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+	font-family: @L, sans-serif;
 }
 
 .block {
-	background: orange;
+	background: @orange;
 	padding: 20px;
 	color: #000;
 	font-size: 18px;
@@ -19,7 +33,6 @@ body {
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
-
 
 
 /*==========  Desktop First Method  ==========*/

@@ -29,10 +29,24 @@
 	
 }
 .owl-theme .owl-controls .owl-buttons div.owl-prev {
+	display: none;
 	left: 0;
 }
+@media (min-width: 992px) {
+	.owl-theme .owl-controls .owl-buttons div.owl-prev {
+		display: block;
+		left: 0;
+	}
+}
 .owl-theme .owl-controls .owl-buttons div.owl-next {
+	display: none;
 	right: 0;
+}
+@media (min-width: 992px) {
+	.owl-theme .owl-controls .owl-buttons div.owl-next {
+		display: block;
+		right: 0;
+	}
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */

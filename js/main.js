@@ -32,14 +32,14 @@ $(document).ready(function() {
 	// При изменении размера окна, в большую сторону, если меню было с крыто, показываем его.
 	$(window).resize(function(){
 	    var w = $(window).width();
-	    if(w > 1900) {
+	    if(w > 4000) {
 	        menu.removeAttr('style');
 	    }
 	});
 
 	//скрытие меню по клику
 	var w = $(window).width(); //ширина
-	if(w < 1900){
+	if(w < 4000){
 		$('nav.navigation a').on("click", function(){
 			menu.slideToggle();
 		});
@@ -47,7 +47,7 @@ $(document).ready(function() {
 	/* Call plugins hrere ...*/
 
 	// OwlCarousel
-	$("#slider_realman").owlCarousel({
+	$("#slider-realman").owlCarousel({
 
 		// Most important owl features
 		items : 1,
@@ -85,7 +85,7 @@ $(document).ready(function() {
 		
 
 	});
-	$("#slider_testimonials").owlCarousel({
+	$("#slider-testimonials").owlCarousel({
 
 		// Most important owl features
 		items : 1,
@@ -125,17 +125,17 @@ $(document).ready(function() {
 	});
 	/* TABS - кастомные табы на jQuery*/
 	// Скрываем все контейнеры кроме первого
-	$('#tabs-sections .section_block:not(:first)').hide();
+	$('#ingredients-sections .ingredients-sections__wrapper:not(:first)').hide();
 
 	// Обработчик на навигацию
 	$('#tabs-nav li').click(function(event) {
 		event.preventDefault();
-		$('#tabs-sections .section_block').hide();
+		$('#ingredients-sections .ingredients-sections__wrapper').hide();
 		$('#tabs-nav .current').removeClass("current");
 		$(this).addClass('current');
 
 		var clicked = $(this).find('a:first').attr('href');
-		$('#tabs-sections ' + clicked).fadeIn('fast');
+		$('#ingredients-sections ' + clicked).fadeIn('fast');
 	}).eq(0).addClass('current');
 
 	// jQuery Validate JS

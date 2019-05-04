@@ -1,26 +1,48 @@
-.contact-bg{
-	background-color: #FFF;
-}
 .contact{
-	border: 0;
-	border-bottom: 1px rgb(235, 235, 235) solid;
-	outline: none;
-	margin-top: 75px;
+	background-color: #fff;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@media (min-width: 992px) {
+		padding-top: 118px;
+		padding-bottom: 118px;
+	}
+}
+.contact__form{
+	position: relative;
+	label.error{
+		display: block;
+		color: red;
+		position: absolute;
+		left: 13px;
+		bottom: -33px;
+	}
 }
 
-.contact__name{
-	width: 260px;
+.contact__form--name{
+	border: 0;
+	border-bottom: 1px rgb(235, 235, 235) solid;
+	outline: none;
+	margin-top: 75px;
+	width: 246px;
 }
-.contact__email{
-	width: 260px;
+.contact__form--email{
+	border: 0;
+	border-bottom: 1px rgb(235, 235, 235) solid;
+	outline: none;
+	margin-top: 75px;
+	width: 228px;
 }
-.contact__theme{
+.contact__form--theme{
+	border: 0;
+	border-bottom: 1px rgb(235, 235, 235) solid;
+	outline: none;
+	margin-top: 75px;
 	width: 260px;
 	@media (min-width: 992px) {
 		width: 520px;
 	}
 }
-.contact__text{
+.contact__form--text{
 	width: 260px;
 	border: 0;
 	border-bottom: 1px rgb(235, 235, 235) solid;
@@ -30,32 +52,9 @@
 		width: 520px;
 	}
 }
-.contact__button{
-	border: 0;
-	background-color: rgb(24, 163, 221);
-	width: 225px;
-	height: 50px;
-	-webkit-border-radius: 25px;
-	      border-radius: 25px;
-	color: #fff;
-	text-transform: uppercase;
+.contact__form--button{
+	margin-top: 50px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 52px;
-	margin-bottom: 25px;
-	outline: none;
-	transition: 1.5s;
-	&:hover{
-		background-color: #FFF;
-		color: rgb(24, 163, 221);
-		border: 1px solid;
-	}
-	@media (min-width: 992px) {
-		margin-bottom: 120px;
-	}
-}
-label.error{
-	display: block;
-	color: red;
 }

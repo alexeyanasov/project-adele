@@ -1,35 +1,24 @@
 .section-header{
-	padding-top: 30px;
-	padding-bottom: 30px;
 	text-align: center;
-	@media (min-width: 992px) {
-		padding-top: 118px;
-		
-	}
-}
-.pb-80{
-	@media (min-width: 992px) {
-		padding-bottom: 80px;
-	}
 }
 .section-header__title{
-	font-family: Ralyway;
+	font-family: @R;
 	font-size: 25px;
 	font-weight: 400;
 	text-transform: uppercase;
 	padding-bottom: 30px;
-	color: #333740;
+	color: @darkgray;
 	@media (min-width: 992px) {
 		font-size: 30px;
 	}
 }
 .section-header__title--white{
-	font-family: Ralyway;
+	font-family: @R;
 	font-size: 25px;
 	font-weight: 400;
 	text-transform: uppercase;
 	padding-bottom: 30px;
-	color: #e5e5e5;
+	color: @whiteHead;
 	@media (min-width: 992px) {
 		font-size: 30px;
 	}
@@ -37,7 +26,7 @@
 
 .section-header__title--special{
 	font-size: 25px;
-	font-family: Ralyway;
+	font-family: @R;
 	font-weight: 800;
 	padding-right: 20px;
 	@media (min-width: 992px) {
@@ -54,16 +43,15 @@
 	height: 5px;
 	top: 0px;
 	bottom: -5px;
-	border-right: 1px solid #18a3dd;
+	border-right: 1px solid @blue;
 	left: 11px;
 }
 .section-header__title--special--none:after{
 	display: none;
 }
 .section-header__subtitle{
-	font-family: Lato;
 	font-weight: 300;
-	color: #83888f;
+	color: @graySubtitle;
 	@media (min-width: 992px) {
 		font-size: 16px;
 	}
