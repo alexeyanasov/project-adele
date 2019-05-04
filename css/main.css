@@ -286,7 +286,7 @@ body {
 }
 .header {
   padding-top: 300px;
-  padding-bottom: 600px;
+  padding-bottom: 400px;
   height: 100vh;
   display: flex;
   -webkit-align-items: center;
