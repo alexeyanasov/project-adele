@@ -82,7 +82,7 @@ textarea {
   font-size: 25px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   color: #333740;
 }
 @media (min-width: 992px) {
@@ -292,6 +292,7 @@ body {
 }
 @media (min-width: 992px) {
   .header {
+    height: 100vh;
     background-image: url(../img/header/bg-header.png);
     background-repeat: no-repeat;
     background-position: right center;
@@ -397,7 +398,12 @@ body {
   border: 1px solid;
 }
 .mr-30 {
-  margin-right: 30px;
+  margin-right: 10px;
+}
+@media (min-width: 380px) {
+  .mr-30 {
+    margin-right: 30px;
+  }
 }
 .header__video {
   text-transform: uppercase;
@@ -421,8 +427,13 @@ body {
   display: inline-block;
   background-image: url(../img/icon/icon.png);
   background-repeat: no-repeat;
-  left: 136px;
+  left: 90px;
   top: 2px;
+}
+@media (min-width: 992px) {
+  .header__video .header__video--link:after {
+    left: 136px;
+  }
 }
 @media (min-width: 992px) {
   .header__video .header__video--link:after {
@@ -976,7 +987,7 @@ ul {
 @media (min-width: 992px) {
   .certifications {
     padding-bottom: 90px;
-    padding-top: 118px;
+    padding-top: 80px;
   }
 }
 .certifications__content .certifications__content--img {
@@ -1008,6 +1019,7 @@ ul {
   margin-bottom: 50px;
 }
 .buynow {
+  background-color: #fafcfc;
   padding-top: 50px;
   position: relative;
 }
@@ -1098,7 +1110,7 @@ ul {
 @media (min-width: 992px) {
   .subscribe {
     padding-bottom: 60px;
-    padding-top: 118px;
+    padding-top: 100px;
   }
 }
 .subscribe__inner {
@@ -1218,6 +1230,7 @@ ul {
   outline: none;
   margin-top: 75px;
   width: 246px;
+  padding-bottom: 15px;
 }
 .contact__form--email {
   border: 0;
@@ -1225,6 +1238,7 @@ ul {
   outline: none;
   margin-top: 75px;
   width: 228px;
+  padding-bottom: 15px;
 }
 .contact__form--theme {
   border: 0;
@@ -1232,6 +1246,7 @@ ul {
   outline: none;
   margin-top: 75px;
   width: 260px;
+  padding-bottom: 15px;
 }
 @media (min-width: 992px) {
   .contact__form--theme {
