@@ -1,4 +1,4 @@
-# Проект Supplements PSD
+# Проект Adele
 
 ### Макет сделан мной. Дизайн (PSD) и верстка (HTML, CSS, LESS, jQuery). 
 
@@ -11,13 +11,13 @@
   - Реализован jQuery TAB, в блоке SUPPLEMENT | FACTS
   - Реализован jQuery Validation, в блоках SUBSCRIBE FOR | TIPS & OFFERS и INQUIRE | YOUR ISSUE
 
-[**Онлайн-демо**](https://alexeyanasov.github.io/project-supplements/)
+[**Онлайн-демо**](https://alexeyanasov.github.io/project-adele/)
 
 
 ### Тестировать локально
 
 ```sh
-git clone https://github.com/alexeyanasov/project-supplements.git
-cd supplements
+git clone https://github.com/alexeyanasov/project-adele.git
+cd adele
 Открыть index.html
 ```
